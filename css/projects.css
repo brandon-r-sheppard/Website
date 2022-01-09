@@ -1,0 +1,50 @@
+.projectContainer{
+    margin: auto auto;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 'picture info';
+    width: 60%;
+    background-color: #474B4F;
+    border-style: solid;
+    border-color: #61892F;
+    margin-top: 5%;
+    text-align: center;
+}
+.projectContainer a{
+    text-decoration: none;
+    color: #86C232;
+
+}
+.projectPicture{
+    grid-area: 'picture';
+    width: 100%;
+
+}
+.projectInfo{
+    grid-area: 'info';
+    padding: 2%;
+}
+.projectInfo h2{
+    color: #86C232;
+}
+.projectInfo p{
+    color: white;
+    text-align: center;
+    padding-right: 4%;
+    font-size: 15px;
+}
+.flair{
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 1330px) {
+    .projectContainer{
+        grid-template-columns: 100%;
+        grid-template-areas: 'info' 'picture';
+    }
+    .projectInfo p{
+        padding-right: 0%;
+    }
+}
